@@ -28,39 +28,78 @@ const seanBeanShows = [
 console.log('# Challenge #1');
 // Create a function that console.logs every item in the movie list. Now call that function.
 
+function movieList(){
+  for( i = 0; i <= seanBeanMovies.length; i++)
+  
+  console.log(seanBeanMovies[i]);
+}
 
+movieList();
 
 console.log('# Challenge #2');
 // Create a function that console.logs every item in the TV list. Now call that function.
 
+function showList(){
+  for( i = 0; i <= seanBeanShows.length; i++)
+  console.log(seanBeanShows[i]);
+}
+
+showList();
 
 
 console.log('# Challenge #3');
 // There's an order to the array items, but only if you're a major tv or movie buff--or, like this project's author, a minor Sean Bean buff--would you notice; they're listed chronologically, newest first. Now write a function that consoles out the movies in oldest-first order, and call that function.
 
+function chronoMovies(){
+  for(i = seanBeanMovies.length ; i >= 0 ; i--){
+    console.log(seanBeanMovies[i])
+  }
 
+}
+
+chronoMovies()
 
 console.log('# Challenge #4');
 // Now do the same as above, but for TV shows.
 
+function chronoShows(){
+  for (i = seanBeanShows.length; i>= 0; i--){
+    console.log(seanBeanShows[i])
+  }
+}
+
+chronoShows()
 
 console.log('# Challenge #5');
 // Now that we know that our initial two functions don't just list the items, but list them in newest-first chronological order, change their names to give them as equally descriptive names as the ones you gave the oldest-first functions. (If you didn't give them descriptive names, do so now.) Then console out "Done!" below.
 
 
+
+
 console.log('# Challenge #6');
 // Write a function that, without any NEW loops, consoles out the movies list items individually followed by the tv list items individually, in chronological order of newest-first (not worrying about whether a movie is before a tv show!). What would you name such a beast? Got an idea? Then name it! And call it!
 
+function allNewFirst(){
+  chronoMovies() , chronoShows()
+}
 
+allNewFirst()
 
 console.log('# Challenge #7');
 // Do the same as above, but for oldest-first order.
 
+function allOldFirst(){
+  movieList() , showList()
+}
 
+allOldFirst()
 
 console.log('# Challenge #8');
 // Write a function that consoles out any movies in the Lord of the Rings series. Now call it!
 
+function noRings(){
+
+}
 
 
 console.log('# Challenge #9');
